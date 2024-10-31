@@ -1,0 +1,367 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap);
+
+#wpwrap {
+    background: #f0f0f1
+}
+
+#wpfooter, #wpfooter a {
+    color: #fff
+}
+
+.ginger-box-layout * {
+    box-sizing: border-box
+}
+
+.ginger-box {
+    background-color: #fff;
+    border: 1px solid #e1e6e6;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    direction: ltr;
+    font-family: 'Noto Serif', serif;
+    font-size: 16px;
+    width: 1060px;
+    margin: 0 auto 20px;
+    max-width: 100%
+}
+
+.ginger-box * {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    direction: ltr
+}
+
+.ginger-inner-box {
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 15px
+}
+
+.clear {
+    clear: both
+}
+
+.ginger-box h2 {
+    margin: 0;
+    padding: 15px 0;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center
+}
+
+.pricing-container {
+    padding: 30px 0
+}
+
+.pricing-tables {
+    font-family: 'Noto Serif', serif;
+    max-width: 1024px;
+    margin: 0 auto
+}
+
+.price-table {
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, .1) 0 16px 24px 0;
+    -webkit-box-shadow: rgba(0, 0, 0, .1) 0 16px 24px 0;
+    -moz-box-shadow: rgba(0, 0, 0, .1) 0 16px 24px 0;
+    margin: 0 0 30px 0
+}
+
+.price-table .table-head .package-name {
+    background: #069cf9;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 15px 0;
+    font-weight: 700;
+    font-family: 'Noto Serif', serif
+}
+
+.package-price {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    text-align: center;
+    color: #069cf9;
+    padding: 10px 0 0
+}
+
+.package-price span {
+    color: #333;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700
+}
+
+.package-desc {
+    text-align: center;
+    border-bottom: solid 1px #000;
+    color: #069cf9;
+    padding: 10px 0 10px 0;
+    font-weight: 700
+}
+
+.col-md-4 {
+    width: 33.33%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    float: left
+}
+
+.table-body {
+    padding: 0 20px;
+    font-size: 16px
+}
+
+.table-body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.table-body ul li {
+    display: block;
+    text-align: center;
+    line-height: 22px;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 12px 0
+}
+
+.table-body ul li:after, .table-body ul li:before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: #1c2530;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: .3;
+    z-index: 1
+}
+
+.table-body ul li:after {
+    width: 0;
+    background: #1c2530;
+    transition: all .25s linear;
+    opacity: 1;
+    z-index: 2
+}
+
+.table-body ul li:hover:after {
+    width: 100%;
+    opacity: 1
+}
+
+.table-body ul li:last-child:after, .table-body ul li:last-child:before {
+    display: none
+}
+
+.table-body a, .table-body a:focus, .table-body a:hover {
+    color: #1c2530;
+    text-decoration: none;
+    display: block
+}
+
+a.checkout-url {
+    display: block;
+    text-align: center;
+    background-color: #068eef;
+    background-image: linear-gradient(45deg, #0674db, #069cf9);
+    color: #fff;
+    padding: 15px 0;
+    text-decoration: none;
+    font-size: 24px;
+    -webkit-border-bottom-right-radius: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    -moz-border-radius-bottomright: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: all .25s linear
+}
+
+a.checkout-url:hover {
+    background-color: #0674db;
+    background-image: linear-gradient(45deg, #069cf9, #0674db)
+}
+
+.price-switch {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0
+}
+
+label.checkbox-switch {
+    position: relative;
+    width: 80%;
+    vertical-align: top;
+    height: 40px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: solid 2px #069cf9;
+    cursor: pointer;
+    display: block
+}
+
+label.checkbox-switch:before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-color: #068eef;
+    background-image: linear-gradient(45deg, #0674db, #069cf9);
+    position: absolute;
+    border-radius: 18px;
+    left: 2px;
+    top: 2px;
+    transition: all .25s linear;
+    margin-left: 0
+}
+
+input[type=checkbox]:checked + label.checkbox-switch:before {
+    margin-left: 23px
+}
+
+.plan-switch {
+    width: 80px;
+    text-align: center
+}
+
+.yearly-plan {
+    width: calc(50% - 40px)
+}
+
+.price-switch .plan-price {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    transition: all .25s linear
+}
+
+.price-switch .plan-desc {
+    font-size: 14px;
+    line-height: 16px;
+    transition: all .25s linear
+}
+
+.price-switch .active .plan-desc, .price-switch .active .plan-price {
+    color: #069cf9
+}
+
+.price-switch {
+    padding: 15px 0;
+    border-top: solid 1px #1c2530
+}
+
+.text-right {
+    text-align: right !important
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0
+}
+
+.tooltip-text {
+    background-color: #1c2530;
+    border-radius: 4px;
+    bottom: 100%;
+    color: #fff;
+    left: 0;
+    margin-left: 15px;
+    opacity: 0;
+    padding: 5px 10px;
+    position: absolute;
+    transition: opacity .25s;
+    visibility: hidden;
+    width: auto;
+    z-index: 1;
+    margin-right: 15px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center
+}
+
+.tooltip:hover .tooltip-text:after {
+    border-width: 5px;
+    border-style: solid;
+    border-color: #1c2530 transparent transparent transparent;
+    content: "";
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+    top: 100%
+}
+
+.tooltip:hover .tooltip-text {
+    opacity: 1;
+    visibility: visible
+}
+
+.credit-cards {
+    text-align: center
+}
+
+.credit-cards img {
+    max-width: 100%;
+    height: auto
+}
+
+.money-back {
+    text-align: center;
+    padding: 10px 0 30px 0;
+    font-weight: 700
+}
+
+.faq-answer {
+    line-height: 20px
+}
+
+.faq-question {
+    font-weight: 700;
+    padding: 0 0 5px 0
+}
+
+.faq-section + .faq-section {
+    padding: 20px 0 0 0
+}
+
+.inner-box.faq-list {
+    padding: 15px 0 15px 0
+}
+
+.style-box .superb-grid {
+    padding: 15px
+}
+
+@media only screen and (max-width: 1024px) {
+    .ginger-box {
+        width: 100%;
+        padding: 20px
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .pricing-tables .col-md-4 {
+        width: 100%
+    }
+}
